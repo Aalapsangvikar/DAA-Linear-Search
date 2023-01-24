@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main(){
+int a[10],key,n=6;
+int flag=0;
+int i;
+printf("enter array elements:");
+for(i=0;i<n;i++){
+scanf("%d",&a[i]);}
+printf("Enter value of key:");
+scanf("%d",&key);
+for(i=0;i<n;i++){
+if(key==a[i]){
+printf("Element is found at location %d",i);
+flag++;
+}}
+if(flag==0)
+{
+printf("Element cannot be found");
+}
+return 0;
+}
